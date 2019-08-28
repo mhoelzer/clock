@@ -1,6 +1,6 @@
 html {
-    background: #018ded url(http://unsplash.it/1500/1000?image=881&blur=5);
-    background-size: cover;
+    background: #018ded url("time.png") no-repeat center center fixed;
+    /* background-size: cover; */
     font-family: "helvetica neue";
     text-align: center;
     font-size: 10px;
@@ -8,10 +8,13 @@ html {
 body {
     margin: 0;
     font-size: 2rem;
-    display: flex;
-    flex: 1;
     min-height: 100vh;
-    align-items: center;
+    display: flex;
+    /* flex: 1; */
+	align-items: center;
+	justify-content: center;
+	/* flex-wrap: nowrap; */
+	flex-flow: column;
 }
 .clock {
     width: 30rem;
