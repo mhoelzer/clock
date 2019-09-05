@@ -47,6 +47,12 @@ body {
     /* ^^^ to see some fun stuff, do transition-timing-funxtion, an dyou get to pick what the transform looks like with the bezier little sideways ~ */
 }
 
-.numerals {
+#second-hand {
+	/* color: orange;  */ 
+	/* ^^^ put this in a nurmerals second  */
+	background-color: orange;
+}
+
+#numerals {
 	color: white;
 }

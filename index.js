@@ -1,7 +1,7 @@
-const secondHand = document.querySelector(".second-hand");
-const minuteHand = document.querySelector(".minute-hand");
-const hourHand = document.querySelector(".hour-hand");
-const numerals = document.querySelector(".numerals");
+const secondHand = document.querySelector("#second-hand");
+const minuteHand = document.querySelector("#minute-hand");
+const hourHand = document.querySelector("#hour-hand");
+const numerals = document.querySelector("#numerals");
 
 let secondsCounter = 0;
 let minutesCounter = 0;
@@ -36,7 +36,7 @@ function whatIsTheTime() {
     let secondsDigits = seconds < 10 ? "0" + seconds : seconds;
     let minutesDigits = minutes < 10 ? "0" + minutes : minutes;
     let hoursDigits = hours < 10 ? "0" + hours : hours;
-    numerals.innerHTML = `${hoursDigits}:${minutesDigits}:${secondsDigits}`;
+    numerals.innerHTML = `${hoursDigits}:${minutesDigits}:<span id="second-hand">${secondsDigits}</span>`;
 }
 
 setInterval(whatIsTheTime, 1000); // runs every second
